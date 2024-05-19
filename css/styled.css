@@ -1,0 +1,24 @@
+body{
+    margin: auto;
+}
+.navbar-brand{
+    color: #FFFFFF;
+}
+.nav-link{
+    color: #FFFFFF;
+}
+.nav-link.active{
+    color: #00ff55 !important ;
+}
+.nav-sub-title{
+font-size:xx-small;
+color: #00ff55
+}
+.nav-image{
+    height: 50px;
+    width: 50px;
+    margin-right: 10px;
+}
+.navbar-nav{
+justify-content: right;
+}
