@@ -1,24 +1,105 @@
-body{
+body {
     margin: auto;
 }
-.navbar-brand{
+
+/*Nav CSS Start*/
+.navbar {
+    border-bottom: ridge 1px #00ff55;
+}
+
+.navbar-brand {
     color: #FFFFFF;
 }
-.nav-link{
+
+.nav-link {
     color: #FFFFFF;
 }
-.nav-link.active{
-    color: #00ff55 !important ;
+
+.navbar-nav .nav-item .nav-link:hover {
+    color: #00ff55;
+
 }
-.nav-sub-title{
-font-size:xx-small;
-color: #00ff55
+
+.navbar-nav .nav-item .nav-link.active {
+    border-bottom: 2px solid #00ff55;
+    color: #00ff55;
 }
-.nav-image{
+
+.nav-sub-title {
+    font-size: xx-small;
+    color: #00ff55
+}
+
+.nav-image {
     height: 50px;
     width: 50px;
     margin-right: 10px;
 }
-.navbar-nav{
-justify-content: right;
+
+.navbar-nav {
+    justify-content: right;
+}
+
+/*Body (Home) CSS Start*/
+
+.home-section {
+    width: 100%;
+    height: 700px;
+    background-image: url(../graphics/image/cvsuBackground.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-title {
+    text-align: center;
+    justify-content: center;
+}
+
+.header-title {
+    color: #FFFFFF;
+}
+
+.main-sub-title {
+    color: #00ff55;
+    text-shadow: 0 0 0px #00ff55, 0 0 5px #00ff55, 0 0 5px #00ff55;
+
+}
+
+.main-arrow-container {
+    display: flex;
+    justify-content: center;
+}
+
+.arrow-down-container {
+    border-radius: 5px;
+    width: 13%;
+    height: 30px;
+    transition: border-color 0.3s ease-in-out;
+}
+
+.arrow-down-container:hover {
+    border: solid 1px #00ff55;
+}
+
+.arrow-down-icon {
+    width: 30px;
+    height: 30px;
+}
+
+/*Body (About) CSS Start*/
+.about-section {
+    background: rgb(255, 255, 255);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(0, 204, 68, 1) 50%, rgba(0, 102, 34, 1) 100%);
+}
+
+.about-section {
+    display: flex;
+    justify-content: center;
+}
+
+.history-header {
+    color: #FFFFFF;
 }
