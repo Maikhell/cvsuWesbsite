@@ -17,7 +17,6 @@ body {
 
 .navbar-nav .nav-item .nav-link:hover {
     color: #00ff55;
-
 }
 
 .navbar-nav .nav-item .nav-link.active {
@@ -96,10 +95,60 @@ body {
 }
 
 .about-section {
-    display: flex;
-    justify-content: center;
+    text-align: center;
 }
 
 .history-header {
-    color: #FFFFFF;
+    color: #000000;
+    text-shadow: 0 0 0px #ffffff, 0 0 5px #ffffff, 0 0 5px #ffffff;
+    letter-spacing: 5px;
+    font-weight: 700;
+    -webkit-text-stroke: 1px rgb(0, 0, 0);
+}
+
+.history-container {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.read-more-link {
+    color: #003cff;
+    text-decoration: none;
+
+}
+
+.read-more-link:hover {
+    color: #006321;
+
+}
+
+.history-content {
+    text-align: justify;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(90deg, rgba(255, 255, 255, 1) 40%, rgba(0, 204, 68, 1) 70%, rgba(0, 102, 34, 1) 100%);
+    padding: 10px;
+    border-radius: 5px;
+    border: solid 2px;
+}
+
+.history-text {
+    margin-bottom: 0px;
+    margin-right: 10px;
+}
+
+
+.statue-container {
+    object-fit: cover;
+    border: 2px solid;
+    border-radius: 2px;
+}
+
+.cvsu-statue {
+    width: 350px;
+    height: 300px;
 }
