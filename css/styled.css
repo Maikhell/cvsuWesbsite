@@ -90,8 +90,9 @@ body {
 
 /*Body (About) CSS Start*/
 .about-section {
-    background: rgb(255, 255, 255);
-    background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(0, 204, 68, 1) 50%, rgba(0, 102, 34, 1) 100%);
+    background: rgb(0, 0, 0);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 1) 60%, rgba(68, 68, 68, 1) 100%);
+
 }
 
 .about-section {
@@ -99,8 +100,8 @@ body {
 }
 
 .history-header {
-    color: #000000;
-    text-shadow: 0 0 0px #ffffff, 0 0 5px #ffffff, 0 0 5px #ffffff;
+    color: #ffffff;
+    font-size: 50px;
     letter-spacing: 5px;
     font-weight: 700;
     -webkit-text-stroke: 1px rgb(0, 0, 0);
@@ -114,7 +115,7 @@ body {
 }
 
 .read-more-link {
-    color: #003cff;
+    color: #00ff55;
     text-decoration: none;
 
 }
@@ -125,30 +126,115 @@ body {
 }
 
 .history-content {
-    text-align: justify;
-    display: flex;
-    justify-content: space-between;
     align-items: center;
-    background: rgb(255, 255, 255);
-    background: linear-gradient(90deg, rgba(255, 255, 255, 1) 40%, rgba(0, 204, 68, 1) 70%, rgba(0, 102, 34, 1) 100%);
+    color: #FFFFFF;
+    background: rgb(68, 68, 68);
+    background: linear-gradient(180deg, rgba(68, 68, 68, 1) 0%, rgba(42, 42, 42, 1) 50%, rgb(15, 15, 15) 100%);
     padding: 10px;
     border-radius: 5px;
-    border: solid 2px;
+    margin-bottom: 10px;
 }
 
 .history-text {
-    margin-bottom: 0px;
-    margin-right: 10px;
+    text-align: justify;
 }
 
 
 .statue-container {
     object-fit: cover;
-    border: 2px solid;
+    border: 3px solid #00ff55;
     border-radius: 2px;
+    box-shadow: 0 1px 6px 0px #00ff55;
 }
 
 .cvsu-statue {
-    width: 350px;
-    height: 300px;
+    width: 100%;
+    height: 510px;
+}
+
+/*Body (About-Cards) CSS Start*/
+.row>.col-12 {
+    color: #FFFFFF;
+    text-align: justify;
+    margin-bottom: 10px;
+}
+
+.bg-box1 {
+    background: rgb(68, 68, 68);
+    background: linear-gradient(180deg, rgba(68, 68, 68, 1) 0%, rgba(42, 42, 42, 1) 50%, rgb(15, 15, 15) 100%);
+    height: 217px;
+    border-radius: 5px;
+}
+
+.bg-box2 {
+    background: rgb(68, 68, 68);
+    background: linear-gradient(180deg, rgba(68, 68, 68, 1) 0%, rgba(42, 42, 42, 1) 50%, rgb(15, 15, 15) 100%);
+    height: 217px;
+    border-radius: 5px;
+}
+
+.bg-box3 {
+    background: rgb(68, 68, 68);
+    background: linear-gradient(180deg, rgba(68, 68, 68, 1) 0%, rgba(42, 42, 42, 1) 50%, rgb(15, 15, 15) 100%);
+    height: 217px;
+    border-radius: 5px;
+}
+
+
+.card-title {
+    position: relative;
+    display: inline-block;
+    font-weight: bold;
+}
+
+.card-title::after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #00ff55;
+}
+
+/*Body (ACCORDION ) CSS Start*/
+.accordion-item {
+    background: rgb(68, 68, 68);
+    background: linear-gradient(180deg, rgba(68, 68, 68, 1) 0%, rgba(42, 42, 42, 1) 50%, rgb(15, 15, 15) 100%);
+    border-color: #343a40;
+}
+
+.accordion-button {
+    color: #f8f9fa;
+    background: linear-gradient(180deg, rgba(68, 68, 68, 1) 0%, rgba(42, 42, 42, 1) 100%);
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+}
+
+.accordion-button:not(.collapsed) {
+    color: #f8f9fa;
+    background-color: #495057;
+}
+
+.accordion-button:not(.collapsed):hover {
+    color: #f8f9fa;
+    background-color: #495057;
+}
+
+.accordion-body {
+    background-color: #000000;
+}
+
+:root {
+    --bs-caret-color: red;
+    /* Change this to your desired color */
+
+}
+
+.accordion {
+    --bs-accordion-btn-icon: url('/graphics/image/icons8-arrow-down-50.png');
+    --bs-accordion-btn-active-icon: url('/graphics/image/icons8-arrow-down-50.png');
 }
