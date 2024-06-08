@@ -218,7 +218,7 @@ body {
 
 /*Gallery Css (carousel)*/
 .scaled-carousel {
-    transform: scale(0.9);
+    transform: scale(0.8);
     transform-origin: center center;
     width: 100%;
     border-radius: 15px;
@@ -317,7 +317,7 @@ textarea {
 /* Location, Phone, Email Section */
 .contact-list {
     list-style-type: none;
-    margin-left: 10px;
+    margin-left: 90px;
     padding-right: 20px;
 }
 
@@ -386,23 +386,10 @@ textarea {
     transition: all .2s ease-in-out;
 }
 
-.social-media-list li:after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 60px;
-    height: 60px;
-    line-height: 60px;
-    border-radius: 50%;
-    opacity: 0;
-    border: #000000 2px solid;
-    box-shadow: 0 0 0 1px #000000;
-    transition: all .2s ease-in-out;
-}
-
 .social-media-list li:hover {
     background-color: #fff;
+    border: solid 1px #000;
+    border-radius: 30px;
 }
 
 .social-media-list li:hover:after {
@@ -440,12 +427,59 @@ hr {
     text-align: center;
 }
 
+.back-top-icon {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    line-height: 45px;
+    border-radius: 50%;
+    border: #000000 2px dotted;
+    background-color: #ffffff;
+    color: #000000;
+    text-align: center;
+}
+
+.back-top-icon i {
+    vertical-align: middle;
+}
 
 /*Media Queries for Contact*/
 @media screen and (max-width: 850px) {
     .contact-wrapper {
         display: flex;
         flex-direction: column;
+    }
+
+    .scaled-carousel {
+        transform: scale(0.9);
+        transform-origin: center center;
+        width: 100%;
+        border-radius: 15px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.6);
+    }
+
+    .text-end-on-large {
+        text-align: center !important;
+    }
+
+    .contact-list {
+        list-style-type: none;
+        margin-left: 10px;
+        padding-right: 20px;
+    }
+
+    .social-media-list li {
+        position: relative;
+        display: inline-block;
+        height: 60px;
+        width: 60px;
+        margin: 10px 20px;
+        line-height: 60px;
+        border-radius: 50%;
+        color: #fff;
+        background-color: rgb(27, 27, 27);
+        cursor: pointer;
+        transition: all .2s ease-in-out;
     }
 
     #submit {
